@@ -6,5 +6,5 @@
 </template>
 <script setup lang="ts">
 const _test = 5
-console.log("test")
+console.log("test@@");
 </script>
