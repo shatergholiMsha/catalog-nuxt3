@@ -1,75 +1,54 @@
-# Nuxt Minimal Starter
+# 🟢 Renotive Frontend Assignment – Product Catalog (Nuxt 3 + Vue 3)
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+This is a responsive product catalog application built as part of the **Renotive Frontend Assignment**.  
+It uses **Nuxt 3**, **Vue 3 (Composition API)**, and the **DummyJSON Products API** to provide search, sort, create, and product detail functionalities – all wrapped in a custom **Green-style UI theme**.
 
-## Setup
+---
 
-Make sure to install dependencies:
+## 📦 Features
+
+- **View Products**: Paginated & lazy‑loaded product list with virtual scrolling.
+- **Search & Sort**: Sort by price/rating and live search filtering.
+- **Product Details**: Dedicated detail page for each product with store‑first lookup, falling back to API.
+- **Create Product**: Form to add new products (with image drag & drop + QR code display).
+- **Global Error Handling**: Centralized `error.vue` page triggered by `useSWRFetch` on API errors.
+- **Green Theme**: Custom green‑on‑black style across components, including headers, footers, buttons.
+
+---
+
+## ⚙️ Tech Stack
+
+- **Framework**: Nuxt 3 + Vue 3 (Composition API + `<script setup>`)
+- **Language**: TypeScript
+- **State Management**: Pinia
+- **Data Fetching**: SWR (stale-while-revalidate) via custom `useSWRFetch` composable
+- **Styling**: custom CSS Green theme
+- **Linting**: ESLint + Prettier
+
+---
+
+## 🚀 Getting Started
+
+> **Note:** Please make sure you are using **Node.js v20.19.0** before proceeding.
+
+### 1️⃣ Clone the Repository
 
 ```bash
-# npm
+git clone https://github.com/shatergholiMsha/catalog-nuxt3.git
+cd catalog-nuxt3
+```
+
+### Install Dependencies
+
 npm install
 
-# pnpm
-pnpm install
+### Run Development Mode
 
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
 npm run dev
 
-# pnpm
-pnpm dev
+Visit http://localhost:3000
 
-# yarn
-yarn dev
+### Build for Production
 
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
 npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
 npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.

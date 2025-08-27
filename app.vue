@@ -1,10 +1,7 @@
 <template>
-  <div>
-    <NuxtRouteAnnouncer />
-    <NuxtWelcome />
+  <div id="app">
+    <NuxtLayout>
+      <NuxtPage />
+    </NuxtLayout>
   </div>
 </template>
-<script setup lang="ts">
-const _test = 5
-console.log("test@@");
-</script>
